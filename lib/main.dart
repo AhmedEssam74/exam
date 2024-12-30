@@ -1,5 +1,6 @@
 import 'package:exam/homeScreen.dart';
 import 'package:exam/my_theme.dart';
+import 'package:exam/page_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,13 +15,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: Homescreen.routName,
+      initialRoute: PageScreen.routName,
       debugShowCheckedModeBanner: false,
       theme: MyTheme.lightMode,
       darkTheme: MyTheme.darkMode,
       themeMode: ThemeMode.light,
       routes: {
         Homescreen.routName: (context) => const Homescreen(),
+        PageScreen.routName: (context) => const PageScreen(),
+
       },
     );
   }

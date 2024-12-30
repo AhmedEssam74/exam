@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 
 class MyTheme {
+  static const Color mainColor = Color(0xff4838D1);
   static ThemeData lightMode = ThemeData(
     textTheme: const TextTheme(
-      titleLarge: TextStyle(
-        color: Colors.red,
-        fontSize: 50,
+      titleMedium: TextStyle(
+        color: Color(0xff010104),
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+      ),titleSmall: TextStyle(
+        color: Color(0xff4838D1),
+        fontSize:20,
         fontWeight: FontWeight.bold,
       ),
     ),
